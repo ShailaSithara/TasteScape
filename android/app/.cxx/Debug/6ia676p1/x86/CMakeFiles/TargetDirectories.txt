@@ -1,0 +1,2 @@
+C:/Users/musth/Desktop/Project/taste_scape1/android/app/.cxx/Debug/6ia676p1/x86/CMakeFiles/edit_cache.dir
+C:/Users/musth/Desktop/Project/taste_scape1/android/app/.cxx/Debug/6ia676p1/x86/CMakeFiles/rebuild_cache.dir
