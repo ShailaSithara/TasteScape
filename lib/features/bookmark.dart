@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 import 'package:taste_scape1/features/my_recipe/recipe_details.dart';
 
 class BookmarkPage extends StatefulWidget {
@@ -19,7 +19,13 @@ class _BookmarkPageState extends State<BookmarkPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Bookmarks' ,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),),
+        title: const Text(
+          'My Bookmarks',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         backgroundColor: const Color(0xFFFF2045),
         elevation: 2,
       ),
@@ -63,12 +69,12 @@ class _BookmarkPageState extends State<BookmarkPage> {
               final recipe = bookmarkedRecipes[index];
               // Find the index in the original box
               final originalIndex = box.values.toList().indexOf(recipe);
-              
+
               return GestureDetector(
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => RecipeDetailPage(recipe: recipe, index: index),
+                    builder: (context) => RecipeDetailPage(recipe: recipe, index: originalIndex),
                   ),
                 ),
                 child: Card(
@@ -137,7 +143,7 @@ class _BookmarkPageState extends State<BookmarkPage> {
                                 // Update the recipe to remove bookmark
                                 recipe.isBookmarked = false;
                                 box.putAt(originalIndex, recipe);
-                                
+
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content: Text('Removed ${recipe.title} from bookmarks'),

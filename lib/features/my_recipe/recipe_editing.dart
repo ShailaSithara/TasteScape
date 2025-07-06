@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EditRecipePage extends StatefulWidget {

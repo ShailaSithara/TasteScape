@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:taste_scape1/features/my_recipe/recipe_details.dart';
-import 'package:taste_scape1/DB/recipe_model.dart'as dbModel;
+import 'package:taste_scape1/db/recipe_model.dart'as dbModel;
 
 class DiscoverPage extends StatefulWidget {
   const DiscoverPage({Key? key}) : super(key: key);

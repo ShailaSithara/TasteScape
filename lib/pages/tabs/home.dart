@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:taste_scape1/DB/add_recipe.dart';
+import 'package:taste_scape1/features/my_recipe/add_recipe.dart';
 import 'package:taste_scape1/features/my_recipe/my_recipe.dart';
 import 'package:taste_scape1/pages/discover.dart';
 import 'package:taste_scape1/pages/profile.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 import 'package:taste_scape1/features/meal_plan/mealplanner.dart';
 import 'package:taste_scape1/pages/others/splash_screens/splash_screen.dart';
 

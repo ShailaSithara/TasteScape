@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 import 'package:taste_scape1/pages/tabs/home.dart';
 import 'dart:io';
 

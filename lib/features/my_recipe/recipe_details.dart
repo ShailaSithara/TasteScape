@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 import 'package:taste_scape1/features/my_recipe/recipe_editing.dart';
 import 'package:taste_scape1/features/shopping_list.dart';
 
@@ -23,33 +23,17 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   @override
   void initState() {
     super.initState();
-    final userBox = Hive.box('userBox');
-
-    // Safely get bookmarkedRecipes list
-    final bookmarkedRecipes = List<int>.from(
-      userBox.get('bookmarkedRecipes', defaultValue: <int>[]),
-    );
-
-    _isBookmarked = bookmarkedRecipes.contains(widget.index);
+    _isBookmarked = widget.recipe.isBookmarked;
   }
 
   void _toggleBookmark() {
-    final userBox = Hive.box('userBox');
-    final bookmarkedRecipes = List<int>.from(
-      userBox.get('bookmarkedRecipes', defaultValue: <int>[]),
-    );
-
+    final recipeBox = Hive.box<Recipe>('recipes');
     setState(() {
-      if (_isBookmarked) {
-        bookmarkedRecipes.remove(widget.index);
-        _isBookmarked = false;
-      } else {
-        bookmarkedRecipes.add(widget.index);
-        _isBookmarked = true;
-      }
+      _isBookmarked = !_isBookmarked;
+      widget.recipe.isBookmarked = _isBookmarked;
     });
 
-    userBox.put('bookmarkedRecipes', bookmarkedRecipes);
+    recipeBox.putAt(widget.index, widget.recipe);
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

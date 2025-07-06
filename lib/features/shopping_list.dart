@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:taste_scape1/DB/recipe_model.dart';
+import 'package:taste_scape1/db/recipe_model.dart';
 
 class ShoppingListPage extends StatefulWidget {
   const ShoppingListPage({super.key});
@@ -31,8 +31,7 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
             fontSize: 26,
           ),
         ),
-                iconTheme: const IconThemeData(color: Colors.white),
-
+        iconTheme: const IconThemeData(color: Colors.white),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -72,11 +71,11 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
               curve: Curves.easeIn,
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 8), // Reduced padding
               child: Row(
                 children: [
-                  Expanded(
-                    flex: 2,
+                  Flexible(
+                    flex: 3,
                     child: TextField(
                       controller: _controller,
                       decoration: InputDecoration(
@@ -96,9 +95,9 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
                       onSubmitted: (_) => _addItem(shoppingListBox),
                     ),
                   ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    flex: 1,
+                  const SizedBox(width: 8), // Reduced spacer
+                  Flexible(
+                    flex: 2,
                     child: DropdownButtonFormField<String>(
                       value: _selectedCategoryToAdd,
                       onChanged: (value) =>
@@ -111,7 +110,7 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
                           borderSide: BorderSide.none,
                         ),
                         contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 16),
+                            horizontal: 8, vertical: 16), // Reduced padding
                       ),
                       style: GoogleFonts.poppins(color: Colors.black87),
                       items: _categories.map((category) {
@@ -122,12 +121,16 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
                       }).toList(),
                     ),
                   ),
-                  const SizedBox(width: 10),
-                  FloatingActionButton(
-                    onPressed: () => _addItem(shoppingListBox),
-                    backgroundColor: const Color(0xFFFF2045),
-                    mini: true,
-                    child: const Icon(Icons.add, color: Colors.white),
+                  const SizedBox(width: 8), // Reduced spacer
+                  SizedBox(
+                    width: 40, // Constrain FAB size
+                    height: 40,
+                    child: FloatingActionButton(
+                      onPressed: () => _addItem(shoppingListBox),
+                      backgroundColor: const Color(0xFFFF2045),
+                      mini: true,
+                      child: const Icon(Icons.add, color: Colors.white, size: 20),
+                    ),
                   ),
                 ],
               ),
