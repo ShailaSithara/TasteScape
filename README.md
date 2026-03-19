@@ -1,58 +1,68 @@
-# 🍲 TasteScape – Recipe App  
+# 🍲 TasteScape  
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=25&duration=3000&color=FFA500&center=true&vCenter=true&width=500&lines=Recipe+Manager;Offline+Cooking+App;Flutter+Project;Clean+UI+Design" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=28&duration=3000&color=FF8C00&center=true&vCenter=true&width=700&lines=Your+Personal+Recipe+Companion;Offline+Smart+Cooking+App;Built+With+Flutter;Clean+%26+Modern+UI" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-App-02569B?style=for-the-badge&logo=flutter&logoColor=white">
+  <img src="https://img.shields.io/badge/Dart-Language-0175C2?style=for-the-badge&logo=dart&logoColor=white">
+  <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge">
 </p>
 
 ---
 
-## 🌟 About TasteScape  
+## 🌟 About The App  
 
-**TasteScape** is a beautifully designed **offline recipe management app** built using Flutter.  
-It helps users discover, manage, and organize their cooking recipes easily.
+✨ **TasteScape** is a beautifully crafted **offline recipe app** built using Flutter.  
+It helps users organize, explore, and manage recipes effortlessly.  
 
-✨ Simple & clean UI  
-✨ Fully offline functionality  
-✨ Easy recipe management  
+💡 Designed with simplicity, speed, and user experience in mind.  
 
 ---
 
-## 🚀 Features  
+## 🎯 Key Features  
 
-✔ Add new recipes  
-✔ Edit & delete recipes  
-✔ Search recipes instantly  
-✔ Bookmark favorite recipes  
-✔ View recent recipes  
-✔ Category-based filtering  
-✔ Offline storage using sqFlite  
+<p align="center">
+  ✨ Add Recipes &nbsp;&nbsp;•&nbsp;&nbsp; 🔍 Smart Search &nbsp;&nbsp;•&nbsp;&nbsp; ❤️ Bookmark  
+  <br><br>
+  🗂 Category Filter &nbsp;&nbsp;•&nbsp;&nbsp; 📂 Recent Recipes &nbsp;&nbsp;•&nbsp;&nbsp; 📱 Offline Access  
+</p>
+
+---
+
+## 📱 App Preview  
+
+<p align="center">
+  <img src="./screenshots/home.png" width="200"/>
+  <img src="./screenshots/add.png" width="200"/>
+  <img src="./screenshots/details.png" width="200"/>
+</p>
+
+<p align="center">
+  <img src="./screenshots/bookmark.png" width="200"/>
+</p>
 
 ---
 
 ## 🛠️ Tech Stack  
 
-- **Framework:** Flutter  
-- **Language:** Dart  
-- **Database:** sqFlite  
-- **State Management:** (Add if used – Provider / Bloc / etc)  
-- **Tools:** Git, GitHub, VS Code  
-
----
-
-## 📱 Screenshots  
-
-<!-- Add your app screenshots here -->
 <p align="center">
-  <img src="YOUR_IMAGE_LINK" width="250">
-  <img src="YOUR_IMAGE_LINK" width="250">
+  <img src="https://skillicons.dev/icons?i=flutter,dart,git,github,vscode" />
 </p>
 
+- **Database:** sqFlite  
+- **Local Storage:** Hive, SharedPreferences  
+
 ---
 
-## ⚙️ Installation  
+## 🧠 App Flow  
 
-```bash
-git clone https://github.com/your-username/TasteScape.git
-cd TasteScape
-flutter pub get
-flutter run
+```text
+Splash Screen → Login / Signup → Home  
+        ↓  
+Discover → Search → View Recipe  
+        ↓  
+Add Recipe → Save → Bookmark  
+        ↓  
+Profile → Manage User Data  
