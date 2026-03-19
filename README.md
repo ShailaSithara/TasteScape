@@ -1,16 +1,58 @@
-# taste_scape1
+# 🍲 TasteScape – Recipe App  
 
-A new Flutter project.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=25&duration=3000&color=FFA500&center=true&vCenter=true&width=500&lines=Recipe+Manager;Offline+Cooking+App;Flutter+Project;Clean+UI+Design" />
+</p>
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌟 About TasteScape  
 
-A few resources to get you started if this is your first Flutter project:
+**TasteScape** is a beautifully designed **offline recipe management app** built using Flutter.  
+It helps users discover, manage, and organize their cooking recipes easily.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✨ Simple & clean UI  
+✨ Fully offline functionality  
+✨ Easy recipe management  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Features  
+
+✔ Add new recipes  
+✔ Edit & delete recipes  
+✔ Search recipes instantly  
+✔ Bookmark favorite recipes  
+✔ View recent recipes  
+✔ Category-based filtering  
+✔ Offline storage using sqFlite  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Framework:** Flutter  
+- **Language:** Dart  
+- **Database:** sqFlite  
+- **State Management:** (Add if used – Provider / Bloc / etc)  
+- **Tools:** Git, GitHub, VS Code  
+
+---
+
+## 📱 Screenshots  
+
+<!-- Add your app screenshots here -->
+<p align="center">
+  <img src="YOUR_IMAGE_LINK" width="250">
+  <img src="YOUR_IMAGE_LINK" width="250">
+</p>
+
+---
+
+## ⚙️ Installation  
+
+```bash
+git clone https://github.com/your-username/TasteScape.git
+cd TasteScape
+flutter pub get
+flutter run
