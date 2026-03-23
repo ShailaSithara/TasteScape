@@ -1,4 +1,4 @@
- # 🍲 TasteScape  
+# 🍲 TasteScape  
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=28&duration=3000&color=FF8C00&center=true&vCenter=true&width=700&lines=Your+Personal+Recipe+Companion;Offline+Smart+Cooking+App;Built+With+Flutter;Clean+%26+Modern+UI" />
@@ -34,13 +34,15 @@ It helps users organize, explore, and manage recipes effortlessly.
 ## 📱 App Preview  
 
 <p align="center">
-  <img src="./screenshots/home.png" width="200"/>
-  <img src="./screenshots/add.png" width="200"/>
-  <img src="./screenshots/details.png" width="200"/>
+  <img src="./home.jpeg" width="180"/>
+  <img src="./add_recipe.jpeg" width="180"/>
+  <img src="./add_shoppinglist.jpeg" width="180"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/bookmark.png" width="200"/>
+  <img src="./meal_plan.jpeg" width="180"/>
+  <img src="./details.jpeg" width="180"/>
+  <img src="./profile.jpeg" width="180"/>
 </p>
 
 ---
@@ -59,30 +61,10 @@ It helps users organize, explore, and manage recipes effortlessly.
 ## 🧠 App Flow  
 
 ```text
-Splash Screen → Login / Signup → Home  
-        ↓  
-Discover → Search → View Recipe  
-        ↓  
-Add Recipe → Save → Bookmark  
-        ↓  
+Splash Screen → Login / Signup → Home
+        ↓
+Discover → Search → View Recipe
+        ↓
+Add Recipe → Save → Bookmark
+        ↓
 Profile → Manage User Data
-
-
-## 📱 App Preview  
-
-<p align="center">
-  <img src="./home.jpeg" width="200"/>
-  <img src="./add_recipe.jpeg" width="200"/>
-</p>
-
-<p align="center">
-  <img src="./add_shoppinglist.jpeg" width="200"/>
-  <img src="./meal_plan.jpeg" width="200"/>
-</p>
-
-<p align="center">
-  <img src="./details.jpeg" width="200"/>
-  <img src="./profile.jpeg" width="200"/>
-</p>
-
-
