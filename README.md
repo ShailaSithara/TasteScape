@@ -1,4 +1,4 @@
-# 🍲 TasteScape  
+ # 🍲 TasteScape  
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=28&duration=3000&color=FF8C00&center=true&vCenter=true&width=700&lines=Your+Personal+Recipe+Companion;Offline+Smart+Cooking+App;Built+With+Flutter;Clean+%26+Modern+UI" />
@@ -65,4 +65,24 @@ Discover → Search → View Recipe
         ↓  
 Add Recipe → Save → Bookmark  
         ↓  
-Profile → Manage User Data  
+Profile → Manage User Data
+
+
+## 📱 App Preview  
+
+<p align="center">
+  <img src="./home.jpeg" width="200"/>
+  <img src="./add_recipe.jpeg" width="200"/>
+</p>
+
+<p align="center">
+  <img src="./add_shoppinglist.jpeg" width="200"/>
+  <img src="./meal_plan.jpeg" width="200"/>
+</p>
+
+<p align="center">
+  <img src="./details.jpeg" width="200"/>
+  <img src="./profile.jpeg" width="200"/>
+</p>
+
+
